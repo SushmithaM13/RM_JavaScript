@@ -6,9 +6,11 @@ const users = [
   { name: "Eva", age: 30, isPremiumMember: true },
 ];
 
-const filteredUsers = users.filter(user=>user.age>=25)
+//Filter only premium users aged 25 and above.
+const filteredUsers = users.filter(user=>user.isPremiumMember && user.age>=25)
 console.log(filteredUsers)
 
+//Sort them by age in ascending order.
 const sorted=filteredUsers.sort((a,b)=>a.age-b.age);
 console.log(sorted)
 
