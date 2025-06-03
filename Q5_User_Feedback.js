@@ -17,11 +17,11 @@ const avg_rating=feedbacks.map(user=>{
         total_comments: user.comments
     }
 })
-// console.log(avg_rating)
+console.log(avg_rating)
 
 //Return list of users with avg rating ≥ 4.5.
 const top_users=avg_rating.filter(user=>user.average>=4.5);
-// console.log(top_users)
+console.log(top_users)
 
 //Return: { userId, averageRating, totalComments }, sorted by averageRating descending.
 const sorted=avg_rating.sort((a,b)=>b.average-a.average)
