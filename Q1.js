@@ -14,5 +14,6 @@ console.log(filteredUsers)
 const sorted=filteredUsers.sort((a,b)=>a.age-b.age);
 console.log(sorted)
 
+//Return only their names as an array.
 const names=sorted.map(user=>user.name)
 console.log(names)
